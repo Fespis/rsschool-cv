@@ -1,1 +1,1 @@
-https://Fespis.github.io/rsschool-cv/cv
+https://Fespis.github.io/rsschool-cv/
