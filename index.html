@@ -5,22 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/Raleway:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
-    <title>CV - ZHuk Nikita</title>
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <title>CV - Zhuk Nikita</title>
+    <link rel="stylesheet" href="styles/tomorrow-night-bright.min.css">
+  </head>
 <body>
+    <nav>
+      <div class="burger">
+        <a class="nav_link" href="#skills"><h3>skills</h3></a>
+        <a class="nav_link" href="#code"><h3>code</h3></a>
+        <a class="nav_link" href="#project"><h3>project</h3></a>
+        <a class="nav_link" href="#contact"><h3>contact</h3></a>
+    </div>
+    </nav>
     <header>
       <div class="header_hello">
         <a href="https://github.com/Fespis"><img class="header_avatar" src="images/avatar.jpg" alt="Avatar"></a>
         <div>
         <h1 class="header_text">nikita zhuk</h1>
-        <h2 class="header_text">beginner web-developer</h2>
+        <h4 class="header_text">beginner web-developer</h4>
         </div>
       </div>
     </header>
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <p class="section_text">I am 21 years old. My purpose is to become a front-and developer and make new friends. I am interested in studying how a computer works, how sites are created, how programs are arranged.My main strengths are:</p>
+        <ul class="section_text_list">
+          <li>Fast learning</li>
+          <li>Perseverance</li>
+          <li>Curiosity</li>
+          <li>Self-education</li>
+        </ul>
+      </section>
+      <section>
+        <h2 id="code">Code example</h2>
+        <pre><code class="html">
+          let array = [2,3,6,4,1,5,7];
+          function sortnumber (a,b) {
+              return a-b;
+          };
+          console.log (array.sort(sortnumber))</code></pre>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <p class="section_text">Vitebsk State Technological University, Economist-Manager, Bachelors degree, 2017-2021</p>
+      </section>
+      <section>
+        <h2 id="project">Training project</h2>
+        <a href="https://fespis.github.io/training/" target="_blank">
+        <div class="hiruzen"> <img class="" src="images/training_project.png" alt="MyFirstTrainingProject">
+          <div class="danzo">
+          <h2>Cuba</h2>
+          <h5>It's my first training project</h5>
+          <h5>Used Technological:</h5>
+          <h3>CSS,HTML,GitHub</h3>
+          <h5>Not adaptive Markup</h5>
+          </div>
+          </div>
+          </a>
+      </section>
+    </main>
     <aside>
       <section>
-        <h2>Skills</h2>
+        <h2 id="skills">Skills</h2>
         <ul class="section_text">
           <li>Basic knowledge of JavaScript</li>
           <li>HTML,CSS</li>
@@ -34,12 +82,12 @@
       <section>
         <h2>Languages</h2>
         <ul class="section_text">
-          <li>English: Intermediate (B1)</li>
+          <li>English: A2-B1</li>
           <li>Russian</li>
         </ul>
       </section>
       <section>
-      <h2>Contacts</h2>
+      <h2 id="contact">Contacts</h2>
       <ul class="section_text_list">
         <li><a href="https://vk.com/ablo4k0_o07">VK </a></li>
         <li><a href="mailto:nikita.zhuk00@gmail.com">Email</a></li>
@@ -49,39 +97,17 @@
       </ul>
     </section>
     </aside>
-    <main>
-      <section>
-        <h2>About Me</h2>
-        <p class="section_text">I am 21 years old. My purpose is to become a front-and developer and make new friends. I am interested in studying how a computer works, how sites are created, how programs are arranged.My main strengths are:</p>
-        <ul class="section_text_list">
-          <li>Fast learning</li>
-          <li>Perseverance</li>
-          <li>Curiosity</li>
-          <li>Self-education</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Code example</h2>
-        <pre class="section_text">
-          let sortmassive = [12,2,11,45,32,67,21,3];
-          function sortnumber (a,b) {
-              return a-b;
-          };
-          console.log (sortmassive.sort(sortnumber))</pre>
-      </section>
-      <section>
-        <h2>Education</h2>
-        <p class="section_text">Vitebsk State Technological University, Economist-Manager, Bachelors degree, 2017-2021</p>
-      </section>
-    </main>
     <footer>
-      <div class="header_hello">
-        <a href="https://github.com/Fespis"><img class="header_avatar" src="images/icon_github.png" alt="icon_github"></a>
+      <div class="footer_hello">
+        <a href="https://github.com/Fespis"><img class="footer_avatar" src="images/icon_github.png" alt="icon_github"></a>
         <div>
-          <h1 class="footer_text">2021</h1>
+          <h3 class="footer_text">2021</h3>
         </div>
-        <a href="https://rs.school/js/"><img class="header_avatar" src="images/icon_rsschool.png" alt="icon_rsschool"></a>
+        <a href="https://rs.school/js/"><img class="footer_avatar" src="images/icon_rsschool.png" alt="icon_rsschool"></a>
       </div>
     </footer>
+    <script src="highlight.js"></script>
+    <script src="script.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
